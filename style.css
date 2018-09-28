@@ -1,0 +1,115 @@
+/*
+Theme Name: 龍泉院WPテーマ
+Author: Kyosuke Takenaka
+Description: 龍泉院 Wordpressテーマ v1
+*/
+
+.bs-component + .bs-component {
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .bs-docs-section {
+    margin-top: 8em;
+  }
+  .bs-component {
+    position: relative;
+  }
+  .bs-component .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    display: block;
+  }
+  .bs-component .modal-dialog {
+    width: 90%;
+  }
+  .bs-component .popover {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    margin: 20px;
+  }
+  .nav-tabs {
+    margin-bottom: 15px;
+  }
+  .progress {
+    margin-bottom: 10px;
+  }
+}
+
+/* Original CSS */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+body,h1,h2,h3,h4 {
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Sawarabi Mincho", serif;
+}
+h1:before,h1:after{
+  content: "−";
+  margin: 0 10px;
+}
+#navbar {
+  height: 80px;
+  background: url('img/nav-bg.png'), rgba(220,220,220,0.8);
+}
+.header-pass {
+  height: 80px;
+}
+.banner {
+  height: 70vh;
+  background: url('img/main.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 0;
+}
+.badge-purple{
+  background-color: #90f;
+}
+.badge-green{
+  
+}
+ul#news li{
+  list-style: none;
+  line-height: 3;
+  border-bottom: dashed 1px #aaa;
+}
+ul#news li:first-child{
+  border-top: dashed 1px #aaa;
+}
+ul#news li:before{
+  content: "";
+  display: inline-block;
+}
+.card{
+  height: 100%;
+}
+.card-img-top {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+.ggmap{
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+}
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
