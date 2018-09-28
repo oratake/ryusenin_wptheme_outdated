@@ -66,6 +66,15 @@ h1:before,h1:after{
 .header-pass {
   height: 80px;
 }
+.nav-item{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 .banner {
   height: 70vh;
   background: url('img/main.jpg') center no-repeat;
@@ -74,9 +83,6 @@ h1:before,h1:after{
 }
 .badge-purple{
   background-color: #90f;
-}
-.badge-green{
-  
 }
 ul#news li{
   list-style: none;
@@ -89,6 +95,23 @@ ul#news li:first-child{
 ul#news li:before{
   content: "";
   display: inline-block;
+}
+/* NEWSカテゴリ */
+ul#news li span.cat-a {
+  background: #e3efef;
+}
+ul#news li span.cat-b {
+  background: #efe3ec;
+}
+ul#news li span.cat-c {
+  background: #efefe3;
+}
+ul#news li span.ymd {
+  display: inline;
+  float: none;
+  padding: 0 5px;
+  font-size: 13px;
+  color: #999;
 }
 .card{
   height: 100%;

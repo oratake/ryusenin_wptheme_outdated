@@ -22,7 +22,7 @@
       <?php wp_nav_menu( array(
         'theme_location'=>'mainmenu', 
         'container'     =>'', 
-        'menu_class'    =>'nav-item', 
+        'menu_class'    =>'navbar-nav ml-auto', 
         'items_warp'    =>'<ul>%3$s</ul>'));
       ?>
     </div>

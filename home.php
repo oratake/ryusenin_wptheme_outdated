@@ -13,16 +13,10 @@ Template name: Home -トップページ-
     <div class="row">
     </div>
   </section>
-
-  <section class="bg-light p-4">
+  
+  <section id="news" class="bg-light p-4">
     <h1 class="text-center">お知らせ</h1>
-      <div class="col-12">
-        <ul id="news" class="p-4">
-          <li class="p-2">2018/07/20　　 <span class="badge badge-primary badge-purple">檀家さま</span> 　<span>お盆期間の予定について</span></li>
-          <li class="p-2">2018/07/14　　 <span class="badge badge-success badge-green">お知らせ</span> 　<span>ホームページの運用を開始致しました。</span></li>
-        </ul>
-        <p class="text-right">お知らせの一覧はこちら</p>
-      </div>
+    <?php get_template_part('content','news'); ?>
   </section>
   
   <section class="m-3">
