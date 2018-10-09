@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: アクセス -INFO-
+Template Name: 固定ページ
 */
  ?>
 
@@ -11,11 +11,16 @@ Template Name: アクセス -INFO-
 <?php get_template_part('content','menu'); ?>
 
 <main>
-  <section class="header-pass">
-    
-  </section>
+  <!-- top banner -->
+    <?php $ctm_img = get_post_meta($post->ID,'imagebanner',true); ?>
+      <?php if($ctm_img): ?>
+        <section class="banner">
+          <img src="<?php $ctm_img; ?>" alt="<?php the_title(); ?>">
+        </section>
+      <?php endif; ?>
   <section id="map" class="m-3 p-4">
     <h2 class="text-center"><?php the_title(); ?></h2>
+    <hr>
     <div class="row">
       <?php get_post_meta($post->ID, 'map', true); ?>
     </div>

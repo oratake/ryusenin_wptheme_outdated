@@ -10,4 +10,4 @@
   <!-- wordpress header -->
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body class="is-hide" <?php body_class(); ?>>
